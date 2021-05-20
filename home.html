@@ -12,32 +12,36 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <div class="inline-flex mt-10">
-        <div class="pl-20 flex inline-flex" ><img src="/asset/coffee 1.png">
-            <span class="font-bold pl-5 pt-1 text-xl " style="width: 200px;">Cofee Shop</span>
+    <div class=" flex border-b-2 border-solid mt-10 pb-10" style=" border-top: #9F9F9F ; border-width: 1px;">
+        <div class="flex-1 flex ml-24"> 
+            <img src="/asset/coffee 1.png" > <span class="ml-4 mt-2 font-bold text-xl"> Cofee Shop </span>
         </div>
-        <nav>
-         <ul class="inline-flex  gap-10 mt-2 ml-48">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Your Cart</li>
-            <li>History</li>
-
-         </ul>
-        </nav>
-        <div class=" pl-64 ml-5 inline-flex">
-            <button >Login</button>
-            <button class="ml-10 bg-yellow-500  text-white font-bold py-2 px-10 rounded-full ">Sign Up</button>
+        <div class="flex-1 mt-3 -ml-16">
+            <ul class="flex space-x-16 text-l" style="color: #4F5665;">
+                <li class="font-bold" style="color : #6A4029 ;"><a href="/home.html"> Home</a></li>
+                <li><a href="/product cust 1.html">Product</a></li>
+                <li><a href="payment delivery 1.html"> Your Cart</a></li>
+                <li><a href="/history cust 2.html"> History</a></li>
+            </ul>
         </div>
+        <div class="flex flex-row mt-1 space-x-8 mr-24"> 
+            <div class=" ml-5 inline-flex">
+                <button >Login</button>
+                <button class="ml-10 bg-yellow-500  text-white font-bold py-2 px-10 rounded-full ">Sign Up</button>
+            </div>
+        </div>
+    </div>
         
     </div>
     <div class="flex-1 mt-14 w-auto relative" style="height: 700px;">
     <div class=" bg-no-repeat overflow-visible" style="background-image: url(/asset/home\ bg.png);height: 645px; width: 1440px;">
         <div class="flex w-44 float-right mr-40 mt-7">
-            <button class="bg-white w-auto flex justify-end items-center text-black-200 p-2 hover:text-blue-400 rounded-l-full">
-                <i class="fa fa-search"> </i>
-            </button>
-            <input class="rounded-r-full p-2" type="text" placeholder="Search...">
+            <div class="flex flex-row border-black rounded-full py-2" style="border-width: 1px; background-color: #EFEEEE;">
+                <button class=" flex bg-white w-auto flex justify-end items-center text-black-200 rounded-l-full " style="background-color: #EFEEEE;outline: none;">
+                    <i class="fa fa-search px-3"> </i>
+                </button>
+                <input class="flex rounded-r-full" style="outline: none;background-color: #EFEEEE;" type="text" placeholder="Search...">
+            </div>
         </div>
         <div class="absolute left-32 top-28 " style="font-family: 'Rubik'; width: 550px ;">
         <h1 class="text-white text-5xl" >Start Your Day with Cofee and Good Meals</h1>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Payment & delivery cust 1</title>
+    <style>
+        .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 20px;
+          user-select: none;
+        }
+        
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        
+        .circle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 20px;
+          width: 20px;
+          background-color: white;
+          border-color: #9F9F9F;
+          border-radius: 50%;
+          border-width: 1px;
+        }
+        
+        .container input:checked ~ .circle {
+          background-color: white;
+        }
+        
+        .circle:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        .container input:checked ~ .circle:after {
+          display: block;
+        }
+        
+        .container .circle:after {
+            top: 4px;
+            left: 4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #6A4029;
+        }
+        </style>
+</head>
+<body>
+    <div class=" flex border-b-2 border-solid mt-10 pb-10" style=" border-top: #9F9F9F ; border-width: 1px;">
+        <div class="flex-1 flex ml-24"> 
+            <img src="/asset/coffee 1.png" > <span class="ml-4 mt-1 font-bold text-xl"> Cofee Shop </span>
+        </div>
+        <div class="flex-1 mt-2 -ml-16">
+            <ul class="flex space-x-16 text-l" style="color: #4F5665;">
+                <li><a href="/home.html"> Home</a></li>
+                <li><a href="/product cust 1.html">Product</a></li>
+                <li class="font-bold" style="color : #6A4029 ;"><a href="payment delivery 1.html"> Your Cart</a></li>
+                <li><a href="/history cust 2.html"> History</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-row mt-2 space-x-8 mr-24"> 
+            <div class="fa fa-search text-3xl flex" style="color: #9F9F9F;"></div>
+            <div class="relative flex"> 
+                <div class=" absolute rounded-full h-4 w-4 flex justify-center -mt-2 -ml-2" style="background-color: #6A4029;">
+                    <span class="text-white font-bold" style="font-size: 10px;">1</span></div>
+            <img class="h-8 w-8" src="/asset/chat (1) 1.png" ></div>
+            <div class=" flex"> <img class="h-8 w-8 rounded-full" src="/asset/image 39.png">  </div>
+        </div>
+    </div>
+    
+    <div  class="bg-no-repeat w-full"  style="height: 1102px; background-image: url(asset/nathan-dumlao-zTZRZV86GhE-unsplash\ 1.png);">
+        <div class="px-24 text-white flex-col flex pt-20">
+            <div class="font-bold" style="font-size: 40px;text-shadow: 10px 10px 10px rgba(0, 0, 0,0.5);">Checkout your<br>item now!</div>
+            <div class="flex flex-row gap-x-10 mt-12">
+                <div class="flex flex-col bg-white pl-9 pr-20 py-10 rounded-2xl" style="height: 737px; width: 487px;">
+                    <div class="flex flex-col border-b-2 space-y-8 pb-10">
+                        <div class="font-bold text-center mb-20 mt-5" style="color: #362115;font-size: 35px;">Order Summary</div>
+                     <div class="flex flex-row text-black" style="font-size: 20px;"> 
+                        <div> <img src="/asset/image 36.png" ></div>
+                        <div class="pl-5"> Hazelnut Latte<br>x 1<br> Regular</div>
+                        <div class="flex-row flex items-center flex-1">
+                        <div class="flex flex-col justify-end items-end flex-1"> IDR 24.0</div>
+                        </div>
+                     </div>
+                     <div class="flex flex-row text-black" style="font-size: 20px;"> 
+                        <div> <img src="/asset/image 37.png" ></div>
+                        <div class="pl-5"> Chicken Fire Wings <br>x 2</div>
+                        <div class="flex-row flex items-center flex-1">
+                            <div class="flex flex-col justify-end items-end flex-1"> IDR 30.0</div>
+                        </div>
+                     </div>
+                    </div>
+                    <div class="flex flex-col mt-5 space-y-2" style="color: #6A4029;">
+                        <div class="flex flex-row ">
+                            <div class="flex flex-1">SUBTOTAL</div>
+                            <div class="flex flex-col justify-end items-end flex-1">IDR 120.000</div>
+                        </div>
+                        <div class="flex flex-row ">
+                            <div class="flex flex-1">TAX & FEES</div>
+                            <div class="flex flex-col justify-end items-end flex-1 mr-2">IDR 20.000</div>
+                        </div>
+                        <div class="flex flex-row ">
+                            <div class="flex flex-1">SHIPPING</div>
+                            <div class="flex flex-col justify-end items-end flex-1 mr-2">IDR 10.000</div>
+                        </div>
+                        <div class="flex flex-row font-bold pt-12" style="font-size: 30px;">
+                            <div class="flex flex-1">TOTAL</div>
+                            <div class="flex flex-col justify-end items-end flex-1">IDR 150.000</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col ml-20" style="width: 455px;">
+                    <div class="flex flex-row"> 
+                        <div class="flex flex-1 font-bold" style="font-size: 25px;">Address details</div>
+                        <div class=" flex-1 flex-col flex justify-end items-end">
+                            <button>edit</button>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl flex-col flex text-black space-y-2 px-10 mt-5 py-7 divide-gray-100 divide-y-2" style="font-size:20px; width: 455px;height: 200px;">
+                        <div><span class="font-bold">Delivery</span> to Iskandar Street</div>
+                        <div>Km 5 refinery road oppsite republic road, effurun, Jakarta</div>
+                        <div>+62 81348287878</div>
+                    
+                    </div>
+                    <div class="flex font-bold mt-12 mb-4" style="font-size: 25px;">Payment method</div>
+                    <div class="bg-white rounded-2xl flex-col flex text-black px-10 py-7 divide-gray-100 divide-y-2" style="font-size:20px; width: 455px;height: 200px;">
+                        <label class="container"><div class="flex flex-row">
+                            <div class=" rounded-xl flex items-center justify-center" style="width: 40px; height: 40px; background-color: #F47B0A;">
+                                <i class="fa fa-credit-card text-white"></i></div><span class="pl-2 pt-1"> Card </span>
+                            </div>
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="circle mt-2"></span>
+                          </label>
+                        <label class="container">
+                            <div class="flex flex-row">
+                            <div class=" rounded-xl flex items-center justify-center" style="width: 40px; height: 40px; background-color: #6A4029;">
+                                <i class="fa fa-university text-white"></i></div><span class="pl-2 pt-1"> Bank account </span>
+                            </div>
+                            <input type="radio" name="radio">
+                            <span class="circle mt-2"></span>
+                        </label>
+                        <label class="container"><div class="flex flex-row">
+                            <div class=" rounded-xl flex items-center justify-center" style="width: 40px; height: 40px; background-color: #FFBA33;">
+                                <i class="fa fa-truck text-white"></i></div><span class="pl-2 pt-1"> Cash on Delivery </span>
+                            </div>
+                            <input type="radio" name="radio">
+                            <span class="circle mt-2"></span>
+                        </label>
+                    
+                    </div>
+                    <div class="mt-20">
+                       <button class="rounded-2xl font-bold" style="width: 455px;height: 84px; background-color: #6A4029; font-size: 20px;">Confirm and Pay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-b from-gray-100 to-white" >
+        <div class="pl-20 pt-52 grid grid-cols-6">
+            <div class="grid-rows-4 col-span-4">
+                <div class="flex inline-flex"><img src="/asset/coffee 1.png">
+                    <span class="font-bold pl-5 pt-1 text-xl">Cofee Shop</span>
+                </div>
+                <div class="mt-6 mb-12 " style="width: 340px;font-size: 16px;">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="flex inline-flex">
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-facebook-f text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-twitter text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-instagram text-2xl" style="color: #6A4029;"></i></div>
+                </div>
+                <div class="text-gray-200 mt-10 mb-60">©2020CoffeeStore</div>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Product</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Download</li>
+                    <li>Pricing</li>
+                    <li>Location</li>
+                    <li>Countries</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Engage</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Cofee Shop?</li>
+                    <li>FAQ</li>
+                    <li>About us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

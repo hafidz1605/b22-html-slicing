@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>history cust 2</title>
+    <style>
+        .containerCheck {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          font-size: 22px;
+          user-select: none;
+        }
+        .containerCheck input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+        }
+        
+        .box {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: white;
+          border-color: #6A4029;
+          border-width: 1px;
+          border-radius: 5px;
+        }
+        
+        .containerCheck input:checked ~ .box {
+          background-color: #6A4029;
+        }
+        
+        .box:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        .containerCheck input:checked ~ .box:after {
+          display: block;
+        }
+        
+        .containerCheck .box:after {
+          left: 7px;
+          top: 2px;
+          width: 10px;
+          height: 15px;
+          border: solid white;
+          border-width: 0 3px 3px 0;
+          transform: rotate(45deg);
+        }
+        </style>
+
+        
+        
+
+</head>
+<body>
+    
+    <div class=" flex border-b-2 border-solid mt-10 pb-10" style=" border-top: #9F9F9F ; border-width: 1px;">
+        <div class="flex-1 flex ml-24"> 
+            <img src="/asset/coffee 1.png" > <span class="ml-4 mt-1 font-bold text-xl"> Cofee Shop </span>
+        </div>
+        <div class="flex-1 mt-2 -ml-16">
+            <ul class="flex space-x-16 text-l" style="color: #4F5665;">
+                <li><a href="/home.html"> Home</a></li>
+                <li><a href="/product cust 1.html">Product</a></li>
+                <li><a href="payment delivery 1.html"> Your Cart</a></li>
+                <li class="font-bold" style="color : #6A4029 ;"><a href="/history cust 2.html"> History</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-row mt-2 space-x-8 mr-24"> 
+            <div class="fa fa-search text-3xl flex" style="color: #9F9F9F;"></div>
+            <div class="relative flex"> 
+                <div class=" absolute rounded-full h-4 w-4 flex justify-center -mt-2 -ml-2" style="background-color: #6A4029;">
+                    <span class="text-white font-bold" style="font-size: 10px;">1</span></div>
+            <img class="h-8 w-8" src="/asset/chat (1) 1.png" ></div>
+            <div class=" flex"> <img class="h-8 w-8 rounded-full" src="/asset/image 39.png">  </div>
+        </div>
+    </div> 
+    <div class="bg-no-repeat" style="background-image: url(/asset/tyler-nix-jE-27l7V3NU-unsplash\ 2.png);">
+        <div class="text-white flex-col flex px-20">
+            <div class="text-center mt-28" style="font-size: 20px;"><span class="font-bold" style="font-size: 40px;">Let’s see what you have bought!</span><br>Select item to delete</div>
+            <div class="items-end flex flex-col underline mt-4 font-bold text-xl"><button>Select All</button></div>
+            <div class="grid-cols-3 grid-rows-5 grid gap-x-10 gap-y-8 mt-14 mb-24">
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered</div>
+                            <div class="ml-36 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered</div>
+                            <div class="ml-36 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered</div>
+                            <div class="ml-36 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl flex inline-flex" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br>Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl flex inline-flex" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br>Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl flex inline-flex" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br>Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl flex inline-flex" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br>Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl flex inline-flex" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br> Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-white rounded-2xl text-black items-center px-4" style="width: 394px; height: 126px;">
+                    <div><img class="h-20 w-20 items-center rounded-full" src="/asset/image 2.png"></div>
+                    <div class="flex flex-col ml-3">
+                        <div class="font-bold text-3xl">Veggie tomato mix</div>
+                        <div class="flex flex-row">
+                            <div class="text-xl" style="color: #895537;">IDR 34.000<br>Delivered to Table 4</div>
+                            <div class="ml-16 mt-7">
+                                <label class="containerCheck">
+                                    <input type="checkbox">
+                                    <span class="box"></span>
+                                  </label>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gradient-to-b from-gray-100 to-white" >
+        <div class="pl-20 pt-32 grid grid-cols-6">
+            <div class="grid-rows-4 col-span-4">
+                <div class="flex inline-flex"><img src="/asset/coffee 1.png">
+                    <span class="font-bold pl-5 pt-1 text-xl">Cofee Shop</span>
+                </div>
+                <div class="mt-6 mb-12 " style="width: 340px;font-size: 16px;">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="flex inline-flex">
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-facebook-f text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-twitter text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-instagram text-2xl" style="color: #6A4029;"></i></div>
+                </div>
+                <div class="text-gray-200 mt-10 mb-60">©2020CoffeeStore</div>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Product</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Download</li>
+                    <li>Pricing</li>
+                    <li>Location</li>
+                    <li>Countries</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Engage</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Cofee Shop?</li>
+                    <li>FAQ</li>
+                    <li>About us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

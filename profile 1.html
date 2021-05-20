@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Profile 1</title>
+    <style>
+        .container {
+          display: block;
+          position: relative;
+          padding-left: 35px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          color: #9F9F9F;
+        }
+        
+        .container input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        
+        .circle {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 30px;
+          width: 30px;
+          background-color: white;
+          border-color: #9F9F9F;
+          border-radius: 50%;
+          border-width: 4px;
+        }
+        
+        .container input:checked ~ .container{
+          color: #6A4029;
+        }
+        
+        .circle:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+        
+        .container input:checked ~ .circle:after {
+          display: block;
+        }
+        
+        .container .circle:after {
+            top: -4px;
+            left: -4px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background:#FFBA33;
+            border-color:  #6A4029;
+            border-width: 4px;
+        }
+        </style>
+</head>
+<body>
+    <div class=" flex border-b-2 border-solid mt-10 pb-10" style=" border-top: #9F9F9F ; border-width: 1px;">
+        <div class="flex-1 flex ml-24"> 
+            <img src="/asset/coffee 1.png" > <span class="ml-4 mt-1 font-bold text-xl"> Cofee Shop </span>
+        </div>
+        <div class="flex-1 mt-2 -ml-16">
+            <ul class="flex space-x-16 text-l" style="color: #4F5665;">
+                <li><a href="/home.html"> Home</a></li>
+                <li><a href="/product cust 1.html">Product</a></li>
+                <li><a href="payment delivery 1.html"> Your Cart</a></li>
+                <li><a href="/history cust 2.html"> History</a></li>
+            </ul>
+        </div>
+        <div class="flex flex-row mt-2 space-x-8 mr-24"> 
+            <div class="fa fa-search text-3xl flex" style="color: #9F9F9F;"></div>
+            <div class="relative flex"> 
+                <div class=" absolute rounded-full h-4 w-4 flex justify-center -mt-2 -ml-2" style="background-color: #6A4029;">
+                    <span class="text-white font-bold" style="font-size: 10px;">1</span></div>
+            <img class="h-8 w-8" src="/asset/chat (1) 1.png" ></div>
+            <div class=" flex"> <img class="h-8 w-8 rounded-full" style="box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.2);" src="/asset/image 39.png">  </div>
+        </div>
+    </div>
+    
+    <div class="bg-no-repeat overflow-visible" style="background-image: url(/asset/nathan-dumlao-XOhI_kW_TaM-unsplash\ 1.png); height: 1470px; width:1480;">
+        <div class="flex-col flex ml-24 space-y-20">
+            <div class="text-white text-4xl font-bold mt-28">User Profile</div>
+            <div class="flex flex-row space-x-14">
+                <div class=" rounded-b-md pr-2" style="width:311px; border-bottom-width: 12px; border-color: #6A4029;">
+                    <div class="bg-white  rounded-t-xl flex flex-col items-center space-y-6" style="width: 310px; height: 358px; border-color: #6A4029;">
+                        <div class="relative mt-14"><img class="w-28 h-28 rounded-full" src="/asset/image 39.png" >
+                            <div class="absolute bottom-0 -right-1 rounded-full h-8 w-8 flex items-center justify-center" style="background-color: #6A4029;">
+                                <i class="fas fa-pencil-alt" style="color: white;"></i></div>      
+                        </div>
+                        <div class="text-center"><span class="font-bold text-3xl">Zulaikha</span><br>zulaikha17@gmail.com</div>
+                        <div >Has been ordered 15 products</div>
+                    </div>
+                </div>
+                <div class=" rounded-b-md pr-2" style="width:803px; border-bottom-width: 12px; border-color: #6A4029;">
+                    <div class="bg-white relative rounded-t-xl flex flex-col" style="width: 802px; height: 358px; border-color: #6A4029;">
+                        <div class="font-bold text-3xl pl-10 pt-5" style="color: #4F5665;">Contacts</div>
+                        <div class="flex-1 flex flex-row pl-10">
+                            <div class="flex flex-1 flex-col pt-5"><span style="color: #9F9F9F; font-size: 20px;">Email adress :</span>
+                                <div class="border-b-2 border-black pb-1 pt-5" style="width: 340px; font-size: 20px;">zulaikha17@gmail.com</div>
+                            </div>
+                            <div class="flex flex-1 flex-col pt-5"><span style="color: #9F9F9F; font-size: 20px;">Mobile number :</span>
+                                <div class="border-b-2 border-black pb-1 pt-5" style="width: 340px; font-size: 20px;">(+62)813456782</div>
+                            </div>
+                        </div>
+                        <div class="pl-10 pb-7 flex flex-1 flex-col"><span style="color: #9F9F9F; font-size: 20px;">Delivery adress :</span>
+                            <div class="border-b-2 border-black pb-1 pt-5" style="width: 340px; font-size: 20px;">Iskandar Street no. 67 Block A Near Bus Stop</div>
+                        </div>
+                        <div class="absolute top-3 right-3 rounded-full h-10 w-10 flex items-center justify-center" style="background-color: #6A4029;">
+                            <i class="fas fa-pencil-alt" style="color: white;"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row">
+                <div class=" rounded-b-md pr-2" style="width:745px; border-bottom-width: 12px; border-color: #6A4029;">
+                    <div class="bg-white relative rounded-t-xl flex flex-col" style="width: 744px; height: 418px; border-color: #6A4029;">
+                        <div class="font-bold text-3xl pl-10 pt-5" style="color: #4F5665;">Details</div>
+                        <div class="flex flex-row pl-10 space-x-12 pb-5">
+                            <div class="flex flex-col pt-5"><span style="color: #9F9F9F; font-size: 20px;">Display name :</span>
+                                <div class="border-b-2 border-black pb-1 pt-5" style="width: 396px; font-size: 20px;">Zulaikha</div>
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex flex-col pt-5"><span style="color: #9F9F9F; font-size: 20px;">DD/MM/YY:</span>
+                                    <div class="border-b-2 border-black pb-1 pt-5" style="width: 217px; font-size: 20px;">03/04/90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                             <div class="pl-10 pb-5 flex flex-col"><span style="color: #9F9F9F; font-size: 20px;">First name :</span>
+                             <div class="border-b-2 border-black pb-1 pt-5" style="width: 396px; font-size: 20px;">Zulaikha</div>
+                             </div>
+                             <div class="pl-10 pt-4">
+                                <label class="container">Male
+                                    <input type="radio" name="radio">
+                                    <span class="circle"></span>
+                                  </label>
+                                  <label class="container">Female
+                                    <input type="radio" name="radio" checked>
+                                    <span class="circle"></span>
+                                  </label>
+                             </div>
+
+                        </div>
+                        <div class="pl-10 pb-5 flex flex-col"><span style="color: #9F9F9F; font-size: 20px;">Last name :</span>
+                            <div class="border-b-2 border-black pb-1 pt-5" style="width: 396px; font-size: 20px;">Nirmala</div>
+                        </div>
+                        <div class="absolute top-5 right-3 rounded-full h-10 w-10 flex items-center justify-center" style="background-color: #6A4029;">
+                            <i class="fas fa-pencil-alt" style="color: white;"></i></div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-5 ml-20" style="width: 330px;">
+                    <div class="text-white font-bold text-2xl">Do you want to save the change?</div>
+                    <div> <button class=" rounded-2xl font-bold text-center"  style="width: 330px;height: 60px; background-color: #6A4029; font-size: 18px;">Save Change</button></div>
+                    <div> <button class=" rounded-2xl font-bold text-center"  style="width: 330px;height: 60px;background-color: #FFBA33; color: #6A4029; font-size: 18px;">Cancel</button></div>
+                    <div> <button class=" mt-10 rounded-2xl font-bold text-left pl-6 bg-white"  style="width: 330px;height: 60px; font-size: 18px;">Edit Password<span class="fa fa-chevron-right float-right pr-14 pt-2"></span></button></div>
+                    <div> <button class=" rounded-2xl font-bold text-left pl-6 bg-white"  style="width: 330px;height: 60px; font-size: 18px;">Log out<span class="fa fa-chevron-right float-right pr-14 pt-2"></span></button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="-mt-3 bg-gradient-to-b from-gray-100 to-white" >
+        <div class="pl-20 pt-52 grid grid-cols-6">
+            <div class="grid-rows-4 col-span-4">
+                <div class="flex inline-flex"><img src="/asset/coffee 1.png">
+                    <span class="font-bold pl-5 pt-1 text-xl">Cofee Shop</span>
+                </div>
+                <div class="mt-6 mb-12 " style="width: 340px;font-size: 16px;">Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans</div>
+                <div class="flex inline-flex">
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-facebook-f text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" mr-8 rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-twitter text-2xl" style="color: #6A4029;"></i></div>
+                    <div class=" rounded-full h-10 w-10 flex items-center justify-center bg-yellow-500 ">
+                        <i class="fab fa-instagram text-2xl" style="color: #6A4029;"></i></div>
+                </div>
+                <div class="text-gray-200 mt-10 mb-60">©2020CoffeeStore</div>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Product</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Download</li>
+                    <li>Pricing</li>
+                    <li>Location</li>
+                    <li>Countries</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="mt-1"> <span class="font-bold">Engage</span>
+                <ul class="space-y-4 mt-6" style="color: #4F5665;">
+                    <li>Cofee Shop?</li>
+                    <li>FAQ</li>
+                    <li>About us</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
